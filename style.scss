@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*!
+Theme Name: THEME_NAME
+Theme URI: http://THEME_DOMAIN.com/
+Author: YOUR_NAME
+Author URI: http://YOUR_DOMAIN.com/
+Description: 
+Version: X.X
+*/
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -21,3 +29,6 @@
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+@import "my-vars";
+@import "drop-menus";
+//@import "wordpress";
