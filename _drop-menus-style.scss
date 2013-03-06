@@ -1,0 +1,121 @@
+/*
+
+some sample html
+
+<nav>
+	<ul class="nav fade">
+		<li><a href="#">Lorem</a></li>
+		<li><a href="#">Aliquam</a>
+			<ul>
+				<li><a href="#">Lorem</a></li>
+				<li><a href="#">Aliquam</a>
+					<ul>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Aliquam</a></li>
+						<li><a href="#">Morbi</a></li>
+						<li><a href="#">Praesent</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Morbi</a></li>
+				<li><a href="#">Praesent</a></li>
+				<li><a href="#">Pellentesque</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Morbi</a></li>
+		<li><a href="#">Praesent</a></li>
+		<li class="right"><a href="#">Pellentesque</a>
+			<ul>
+				<li><a href="#">Lorem</a></li>
+				<li><a href="#">Aliquam</a>
+					<ul>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Aliquam</a></li>
+						<li><a href="#">Morbi</a></li>
+						<li><a href="#">Praesent</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Morbi</a></li>
+				<li><a href="#">Praesent</a></li>
+				<li><a href="#">Pellentesque</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<nav>
+	<ul class="nav fade vertical">
+		<li><a href="#">Lorem</a></li>
+		<li><a href="#">Aliquam</a>
+			<ul>
+				<li><a href="#">Lorem</a></li>
+				<li><a href="#">Aliquam</a>
+					<ul>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Aliquam</a></li>
+						<li><a href="#">Morbi</a></li>
+						<li><a href="#">Praesent</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Morbi</a></li>
+				<li><a href="#">Praesent</a></li>
+				<li><a href="#">Pellentesque</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Morbi</a></li>
+		<li><a href="#">Praesent</a></li>
+		<li class="right"><a href="#">Pellentesque</a>
+			<ul>
+				<li><a href="#">Lorem</a></li>
+				<li><a href="#">Aliquam</a>
+					<ul>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Aliquam</a></li>
+						<li><a href="#">Morbi</a></li>
+						<li><a href="#">Praesent</a></li>
+						<li><a href="#">Pellentesque</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Morbi</a></li>
+				<li><a href="#">Praesent</a></li>
+				<li><a href="#">Pellentesque</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+ */
+.nav > li {
+	margin: 3px;
+	&.children > a:after {
+		content: "▼";
+		float: right;
+	}
+	> a {
+		padding: 10px;
+		background: red;
+		color: white;
+		&:hover, &:focus, &.hover {
+			background: purple;
+		}
+	}
+	//drop backgrounds
+	div, ul {
+		background: green;
+		a {
+			padding: 10px;
+			color: white;
+			&:hover, &:focus, &.hover {
+				background: purple;
+			}
+		}
+		li.children > a:after {
+			content: "▶";
+			float: right;
+		}
+	}
+}
+.nav.vertical > li.children > a:after {
+	content: "▶";
+}
